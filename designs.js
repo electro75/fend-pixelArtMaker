@@ -48,11 +48,12 @@ $(function(){
               i++;
           }
         }
-//adding a column
+//adding a single column
       function addColumn(){
         $('tr').append('<td></td>');
         column++;
       }
+//adding a single row    
       function addRow(){
         $('#pixel_canvas').append('<tr></tr>');
         var newRow=$('#pixel_canvas').children().last();
@@ -61,6 +62,7 @@ $(function(){
         }
         row++;
       }
+//removing a single column    
       function removeColumn(){
         var i=0;
         var iRow=$('#pixel_canvas').children().first();
@@ -71,6 +73,7 @@ $(function(){
         }
         column--;
       }
+//removing a single row    
       function removeRow(){
         $('#pixel_canvas').children().last().remove();
         row--;
